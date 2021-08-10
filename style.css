@@ -14,3 +14,6 @@ body::before {
         width: 50%;
     }
 }
+ul {
+    list-style-type: none;
+}
