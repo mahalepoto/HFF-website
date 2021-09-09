@@ -1,34 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+(function() {
+  
+  $(".panel").on("show.bs.collapse hide.bs.collapse", function(e) {
+    if (e.type=='show'){
+      $(this).addClass('active');
+    }else{
+      $(this).removeClass('active');
+    }
+  });  
 
-
-/*
-      // Initialize and add the map
-      function initMap() {
-        // The location of Uluru
-        const uluru = { lat: -0.17631471383349637, lng: 51.61390244284751 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), 
-        {
-          zoom: 4,
-          center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-          position: uluru,
-          map: map,
-        });
-      }
-*/
-
-// let acc = document.getElementsByClassName("accordion");
-//       for (i = 0; i < acc.length; i++) {
-//         acc[i].addEventListener('click', function () {
-//           this.classList.toggle('open');
-
-//         })
-//       }
-
-// var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'))
-// var collapseList = collapseElementList.map(function (collapseEl) {
-//   return new bootstrap.Collapse(collapseEl)
-// })
+}).call(this);

@@ -29,3 +29,30 @@ body::before {
 ul {
     list-style-type: none;
 }
+
+/* accordion FAQs */
+.fa-caret-right {
+    transition: all .4s ease;
+}
+
+.active .fa-caret-right {
+    transform: rotate(90deg);
+}
+
+ /* Pen decoration */
+body {
+    background-color: #f5f5f5;
+}
+
+.panel-title a {
+    text-decoration: none;
+}
+.panel-body {
+    background-color: white;
+}
+.panel {
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #bbbbbb;
+    margin-bottom: 5px;
+}
