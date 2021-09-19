@@ -5,6 +5,9 @@ body::before {
     height: 60px;
 }
 
+.intro-text {
+    color: white
+}
 .mapouter {
     position:relative;
     text-align:right;
